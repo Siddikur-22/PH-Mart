@@ -204,7 +204,7 @@ header nav .menu a li:hover{
     font-size: 60px;
     margin-left: 50px;
     padding: 15px 0;
-   
+
 }
 .chose-design .icon-1{
     padding:0 4rem; 
@@ -219,5 +219,88 @@ footer{
     align-items: center;
     background-color: #efefefef;
     margin-bottom: 2rem;
+    
+}
+
+/* ----Responsive for mobile devices--- */
+@media (max-width:576px) {
+    header,.hero-section, .product-section{
+        padding: 0 5rem;
+    }
+    
+     .hero-section, .product-section{
+        margin-bottom: 12rem;
+    }
+    header nav .logo h1{
+        font-size: 2rem;
+    }
+    header nav .menu a{
+        margin-left: 1rem;
+    }
+    header nav .menu a li{
+        font-size:1.5rem;
+       
+    }
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-section .hero-content{
+        order: 2;
+        width: 100%;
+    }
+    .hero-section .hero-content h1{
+        font-size: 2rem;
+        width: 100%;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+      
+    }
+    .hero-section .hero-content p{
+        width: 100%;
+        font-size:2rem;
+        margin-bottom: 5rem;
+        
+      
+    }
+    .hero-section .hero-img{
+        order: 1;
+        width: 100%;
+    
+    }
+    /* product-section */
+    .product-section h1{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        line-height: 6rem;
+        
+    }
+    .product-section .products{
+        grid-template-columns: repeat(1,1fr);
+    
+        
+    }
+    /* chose-section */
+    .chose-section .why h1{
+        display:none;
+    }
+    .chose-section .why .chose-design{
+       display: grid;
+      position: relative;
+       
+     
+    }
+    .chose-section .why .chose-design .icon-1{
+       position: relative;
+       right:18rem;
+       width:340px;
+    }
+
+    /* footer */
+    footer p{
+        font-size: 1rem;
+    }
+
+
+
     
 }
